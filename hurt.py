@@ -55,8 +55,8 @@ print(five_list)
 #print(signal_list)
 df = create_pandas(one_list,two_list,three_list,four_list,five_list)
 print(df['1st_in_sin'])
-for i in range(21):
-    if 'True' in pd.iterrows(i):
+for row in df.iterrows():
+    if True in row:
         print('СИНУСОВЫЙ')
     else:
         print('НЕТ')
